@@ -1,0 +1,96 @@
+html{
+   background-color: rgba(198, 163, 121, 0.651);
+   
+}
+header{
+   width: 100vw;
+}
+marquee{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 10vh;
+   align-items: center;
+   text-align: center;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   margin:0 5vw;
+   color:darkslategrey;
+   font-size: calc(1.5rem + 1vw);
+}
+
+.alura{
+   margin:0;
+   background-color: chocolate;
+}
+
+.aluraTxt{
+   font-size: 2.5rem;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   color:rgb(8, 59, 110);
+   font-weight: 900;
+}
+.caja{
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+}
+.indicacion{
+   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   text-align: center;
+   width: 70vw;
+   height: 45vh;
+   border-radius:1rem;
+   padding: .5vw;
+   border: 1px solid white;
+   margin: 1rem 0;
+   font-size:clamp(.6rem, calc(.6rem + 0.6vw), 1.2rem);
+   background: rgba(160, 186, 215, 0.7);
+   resize:none;
+}
+
+.indicacion:hover{
+   background-color: rgba(164, 192, 224,.5);
+   transition:background-color 0.4s ease ;
+}
+h2.titulo{
+   text-align: center;
+   margin: 1rem;
+   font-size: calc(1.5rem + 1vw);
+}
+.parrafo{
+   font-size: calc(.7rem + .6vw);
+   margin: .2rem .5rem;
+   padding: .2rem;
+   list-style: none;
+}
+.pie{
+   margin-top: 1.5rem;
+   text-align: center;
+}
+footer{
+   display: flex;
+   justify-content: center;
+}
+.botones{
+   display: flex;
+}
+.btn{
+   display: inline-block;
+   font-size: calc(.6rem + .8vw);
+   width: 35vw;
+   height: 3rem;
+   margin: 0 .5rem;
+   border: 1px solid white;
+   background-color:chocolate;
+   color: white;
+   border-radius: .6rem;
+   box-shadow: -5px 0px 15px 3px rgba(0, 0, 0, 0.4);
+}
+.btn:hover{
+   font-size: calc(.7rem + .8vw);
+   background-color:rgba(162, 121, 17,.5);
+   color: bisque;
+}

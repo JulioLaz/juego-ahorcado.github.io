@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+   <meta charset='UTF-8'>
+   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+   <meta name='description' content='Juego Ahorcado desafío Alura'>
+   <meta name='keywords' content='Juedo ahorcado propuesto como desafío del curso para principiantes de ALURA'>
+   <link rel="shortcut icon" href="img/icon-H.png" type="image/x-icon">
+   <link rel='stylesheet' href='css/juego.css'>
+   <link rel='stylesheet' href='css/reset.css'>
+   <title>ahorcadito</title>
+</head>
+<body>
+
+   <header>
+      <div class="titulo">
+         <h1 class="h1 pulso">JUEGO DEL <strong>AHORCADITO</strong> </h1>
+      </div>
+   </header>
+
+   <main>
+      <div class='infoBanner'>
+         <input type='text' name='juego' id='info' class='info '>
+      </div>
+      <div class='letra-vida'>
+         <div>
+            <label for='juego'>INGRESAR: letra mayúscula</label>
+            <input type='text' name='juego' id='letra' placeholder='_' class='letra formato-input' maxlength='1' autofocus>
+         </div>
+         <div class='letraIngresada' >
+            <div class='letraI errores' id='errores'></div>
+         </div>
+         <div class=''>
+            <label for='vida'>VIDAS</label>
+            <input type='text' name='vida' id='vida' class='vida animated formato-input' value='SinOutLine' readonly>
+         </div>
+      </div>
+      <div class='letraIngresada' >
+         <div class='letraI monitos' id='letraI'></div>
+      </div>
+   </main>
+   
+   <footer>
+      <div class='botones'>
+         <button id='comprobar' onclick='btnComprobar()' class='btnJuego'>COMPROBAR</button>
+         <button onclick='btnJugar()' class='btnJuego'>NUEVO JUEGO </button>
+            <label for='texto' class="labelAdd">Ingresa nueva palabra hasta siete letras</label>
+            <div class="cajaAddPalabra">
+               <input type="texto" id="palabraAdd" maxlength="7" class='palabraAdd' placeholder="Ingresar">
+               <button class=' btnJuego btnpalabraAdd ' onclick="btnPalabraAdd()">Agregar</button>
+            </div>
+            <label for='textos' class="labelAdd">Ayuda: La palabra pertenece a este género</label>
+            <div class="cajaAddPalabra cajaHelp">
+               <input type="textos" id="helpWord" class='palabraAdd' readonly>
+               <button class=' btnJuego btnpalabraAdd ' onclick="btnhelpWord()">Ayuda</button>
+            </div>
+            <div class="cajaInput">
+               <a class='nivel' href='index.html'><button class='btnJuego btnHomeReset btnHome' onclick="btnHome()">HOME</button></a>
+               <button class='btnJuego btnHomeReset' onclick="btnRefrescar()">RESET</button>
+            </div>
+      </div>
+            <canvas id='canvas' width='600' height='400'></canvas>
+         
+   </footer>
+
+  <script src='js/lista.js'></script>
+<script src='js/ahorcado.js'></script>
+<script src='js/dibu.js'></script>
+</body>
+</html>
